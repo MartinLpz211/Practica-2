@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Resultado";
+}
+
+@if (ViewBag.Authenticated)
+{
+    <h2>Acceso concedido</h2>
+    <p>Bienvenido @ViewBag.Username</p>
+}
+else
+{
+    <h2>Acceso denegado</h2>
+}
